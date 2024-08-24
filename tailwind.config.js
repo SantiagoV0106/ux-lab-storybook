@@ -25,7 +25,7 @@ export default {
         "custom-xs": "2px",
         "custom-sm": "4px",
         "custom-md": "8px",
-        "custom-lg": "12px"
+        "custom-lg": "12px",
       },
       colors: {
         primary: {
