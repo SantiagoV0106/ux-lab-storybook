@@ -1,0 +1,19 @@
+/* Button.css */
+
+/* Estilos base para el botón */
+.button {
+  @apply px-custom-md py-custom-xs rounded-lg border-none cursor-pointer;
+}
+
+.icon-left img,
+.icon-right img {
+  width: 18px; 
+  height: 18px;
+  vertical-align: middle; 
+}
+
+.button.primary {
+  @apply w-40 h-12 bg-primary-darkBlue-300 text-primary-lightBlue-50 
+}
+
+
