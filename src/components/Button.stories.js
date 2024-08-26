@@ -49,6 +49,10 @@ export const Secondary = {
     type: "secondary",
     appearance: "filled",
     state: "enabled",
-    children: "Button",
+    iconLeft: true,
+    leftIconSrc: AddIcon,
+    iconRight: true,
+    rightIconSrc: AddIcon,
+    children: "Button Text"
   },
 };

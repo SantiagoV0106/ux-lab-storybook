@@ -1,7 +1,3 @@
-/* Button.css */
-
-/* Estilos base para el botón */
-
 .button {
   @apply w-40 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer;
 }
@@ -25,4 +21,43 @@
   @apply bg-primary-darkBlue-300 text-primary-lightBlue-50 
 }
 
+.button.primary.hovered{
+  @apply bg-extended-purple-400
+}
 
+.button.primary.disabled{
+  @apply bg-primary-darkBlue-200 cursor-not-allowed
+}
+
+.button.primary.clicked{
+  @apply bg-extended-purple-300
+}
+
+/* .button.primary.focused{
+  @apply outline-none ring-4 ring-primary-lightBlue-300
+} */
+
+.button.secondary {
+  @apply bg-neutral-400 text-primary-lightBlue-50;
+}
+
+.button.secondary.hovered {
+  @apply bg-neutral-500;
+}
+
+.button.secondary.disabled {
+  @apply bg-neutral-300 cursor-not-allowed;
+}
+
+.button.secondary.clicked {
+  @apply bg-neutral-700;
+}
+
+/* .button.secondary.focused {
+  @apply utline-none ring-2 ring-primary-lightBlue-300;
+} */
+
+.button.secondary .icon-left img,
+.button.secondary .icon-right img {
+  fill: currentColor;
+}
