@@ -1,9 +1,6 @@
 import PropTypes from "prop-types";
 import "./Button.css";
 
-/* 
- * TODO: Review if the ICON are working   
-*/
 const getStyles = (type, appearance, state) =>
   ["button", type, appearance, state].filter(Boolean).join(" ");
 

@@ -1,8 +1,17 @@
 /* Button.css */
 
 /* Estilos base para el botón */
+
 .button {
-  @apply px-custom-md py-custom-xs rounded-lg border-none cursor-pointer;
+  @apply w-40 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer;
+}
+
+.icon-left{
+  @apply mr-custom-sm
+}
+
+.icon-right{
+  @apply ml-custom-sm
 }
 
 .icon-left img,
@@ -13,7 +22,7 @@
 }
 
 .button.primary {
-  @apply w-40 h-12 bg-primary-darkBlue-300 text-primary-lightBlue-50 
+  @apply bg-primary-darkBlue-300 text-primary-lightBlue-50 
 }
 
 

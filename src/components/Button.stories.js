@@ -24,8 +24,6 @@ export default {
     },
     iconLeft: { control: "boolean" },
     iconRight: { control: "boolean" },
-    leftIcon: { control: "none" },
-    rightIcon: { control: "none" },
     onClick: { action: 'clicked' },
   },
   args: {
@@ -39,9 +37,9 @@ export const Primary = {
     appearance: "filled",
     state: "enabled",
     iconLeft: true,
-    leftIcon: AddIcon,
+    leftIconSrc: AddIcon,
     iconRight: true,
-    rightIcon: AddIcon,
+    rightIconSrc: AddIcon,
     children: "Button Text",
   },
 };
