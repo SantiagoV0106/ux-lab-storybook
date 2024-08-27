@@ -18,8 +18,7 @@
 .icon-right img {
   width: 24px; 
   height: 24px;
-  vertical-align: middle;
-  fill: currentColor; 
+  vertical-align: middle; 
 }
 
 .button.primary {
@@ -108,11 +107,4 @@
 .button.secondary.outline.clicked{
   @apply bg-transparent text-neutral-700;
   outline: 1px solid #737373;
-}
-
-.button.primary.outline .icon-left img,
-.button.primary.outline .icon-right img,
-.button.secondary.outline .icon-left img,
-.button.secondary.outline .icon-right img {
-  fill: currentColor;
 }

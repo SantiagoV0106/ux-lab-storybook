@@ -1,6 +1,5 @@
 import { action } from "@storybook/addon-actions";
 import { Button } from "../components/Button";
-import AddIcon from '../../public/assets/icons/Add.svg'
 
 export default {
   title: "components/Button",
@@ -37,9 +36,9 @@ export const Primary = {
     appearance: "filled",
     state: "enabled",
     iconLeft: true,
-    leftIconSrc: AddIcon,
+    leftIconSrc: "add",
     iconRight: true,
-    rightIconSrc: AddIcon,
+    rightIconSrc: "add",
     children: "Button Text",
   },
 };
@@ -50,9 +49,9 @@ export const Secondary = {
     appearance: "filled",
     state: "enabled",
     iconLeft: true,
-    leftIconSrc: AddIcon,
+    leftIconSrc: "add",
     iconRight: true,
-    rightIconSrc: AddIcon,
+    rightIconSrc: "add",
     children: "Button Text"
   },
 };

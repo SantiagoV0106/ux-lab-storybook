@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./Button.css";
+import Icon from "./Icon";
 
 /* 
  * TODO: Add the Font and Font-size 
@@ -22,13 +23,13 @@ export const Button = ({
     <button className={getStyles(type, appearance, state)} onClick={onClick}>
       {iconLeft && leftIconSrc && (
         <span className="icon-left">
-          <img src={leftIconSrc} alt="Left Icon" />
+          <Icon name={leftIconSrc} fill="currentColor" />
         </span>
       )}
       {children}
       {iconRight && rightIconSrc && (
         <span className="icon-right">
-          <img src={rightIconSrc} alt="Right Icon" />
+          <Icon name={rightIconSrc} fill="currentColor" />
         </span>
       )}
     </button>
