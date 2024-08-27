@@ -23,7 +23,7 @@
 }
 
 .button.primary {
-  @apply bg-primary-darkBlue-300 text-primary-lightBlue-50 
+  @apply bg-primary-darkBlue-300 text-neutral-50 
 }
 
 .button.primary.hovered{
@@ -31,7 +31,7 @@
 }
 
 .button.primary.disabled{
-  @apply bg-primary-darkBlue-200 cursor-not-allowed
+  @apply bg-primary-darkBlue-200 cursor-not-allowed text-primary-darkBlue-50
 }
 
 .button.primary.clicked{
@@ -43,7 +43,7 @@
 }
 
 .button.secondary {
-  @apply bg-neutral-400 text-primary-lightBlue-50;
+  @apply bg-neutral-400 text-neutral-50;
 }
 
 .button.secondary.hovered {
@@ -51,7 +51,7 @@
 }
 
 .button.secondary.disabled {
-  @apply bg-neutral-300 cursor-not-allowed;
+  @apply bg-neutral-300 cursor-not-allowed text-neutral-200;
 }
 
 .button.secondary.clicked {
@@ -103,11 +103,6 @@
 .button.secondary.outline.disabled{
   @apply bg-transparent text-neutral-300;
   outline: 1px solid #CCCCCC;
-}
-
-.button.secondary.outline.disabled .icon-left img,
-.button.secondary.outline.disabled .icon-right img{
-  fill: currentColor;
 }
 
 .button.secondary.outline.clicked{

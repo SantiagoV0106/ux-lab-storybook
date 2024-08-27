@@ -1,48 +1,58 @@
-import { fn } from '@storybook/test';
-import { Button } from './Button';
+import { action } from "@storybook/addon-actions";
+import { Button } from "../components/Button";
+import AddIcon from '../../public/assets/icons/Add.svg'
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: 'Example/Button',
+  title: "components/Button",
   component: Button,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
+    layout: "centered",
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
+  tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    type: {
+      control: "radio",
+      options: ["primary", "secondary"],
+    },
+    appearance: {
+      control: "radio",
+      options: ["filled", "outline"],
+    },
+    state: {
+      control: "radio",
+      options: ["enabled", "hovered", "disabled", "clicked", "focused"],
+    },
+    iconLeft: { control: "boolean" },
+    iconRight: { control: "boolean" },
+    onClick: { action: 'clicked' },
   },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
+  args: {
+    onClick: action('button-click'),
+  },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary = {
   args: {
-    primary: true,
-    label: 'Button',
+    type: "primary",
+    appearance: "filled",
+    state: "enabled",
+    iconLeft: true,
+    leftIconSrc: AddIcon,
+    iconRight: true,
+    rightIconSrc: AddIcon,
+    children: "Button Text",
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Button',
-  },
-};
-
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
-
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
+    type: "secondary",
+    appearance: "filled",
+    state: "enabled",
+    iconLeft: true,
+    leftIconSrc: AddIcon,
+    iconRight: true,
+    rightIconSrc: AddIcon,
+    children: "Button Text"
   },
 };
