@@ -1,3 +1,7 @@
+/* 
+ * TODO: Fix the icon color
+*/
+
 .button {
   @apply w-40 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer;
 }
@@ -12,9 +16,10 @@
 
 .icon-left img,
 .icon-right img {
-  width: 18px; 
-  height: 18px;
-  vertical-align: middle; 
+  width: 24px; 
+  height: 24px;
+  vertical-align: middle;
+  fill: currentColor; 
 }
 
 .button.primary {
@@ -33,9 +38,9 @@
   @apply bg-extended-purple-300
 }
 
-/* .button.primary.focused{
-  @apply outline-none ring-4 ring-primary-lightBlue-300
-} */
+.button.primary.focused.filled{
+  box-shadow: inset 0 0 0 1px #42C0F0;
+}
 
 .button.secondary {
   @apply bg-neutral-400 text-primary-lightBlue-50;
@@ -53,11 +58,66 @@
   @apply bg-neutral-700;
 }
 
-/* .button.secondary.focused {
-  @apply utline-none ring-2 ring-primary-lightBlue-300;
-} */
+.button.secondary.focused.filled {
+  box-shadow: inset 0 0 0 1px #42C0F0; 
+}
 
 .button.secondary .icon-left img,
 .button.secondary .icon-right img {
+  fill: currentColor;
+}
+
+/* Outline styles */
+
+.button.primary.outline {
+  @apply bg-transparent text-primary-darkBlue-300;
+  outline: 1px solid #0041A3;
+}
+
+.button.primary.outline.hovered {
+  @apply bg-transparent text-primary-darkBlue-400;
+  outline: 1px solid #003B93;
+}
+
+.button.primary.outline.disabled {
+  @apply bg-transparent text-primary-blue-200;
+  outline: 1px solid #B1CEE2;
+}
+
+.button.primary.outline.clicked {
+  @apply bg-transparent text-extended-purple-300;
+  outline: 1px solid #283583;
+}
+
+/* Outline Secondary styles */
+.button.secondary.outline{
+  @apply bg-transparent text-neutral-400;
+  outline: 1px solid #BFBFBF;
+}
+
+.button.secondary.outline.hovered{
+  @apply bg-transparent text-neutral-500;
+  outline: 1px solid #B8B8B8;
+}
+
+.button.secondary.outline.disabled{
+  @apply bg-transparent text-neutral-300;
+  outline: 1px solid #CCCCCC;
+}
+
+.button.secondary.outline.disabled .icon-left img,
+.button.secondary.outline.disabled .icon-right img{
+  fill: currentColor;
+}
+
+.button.secondary.outline.clicked{
+  @apply bg-transparent text-neutral-700;
+  outline: 1px solid #737373;
+}
+
+.button.primary.outline .icon-left img,
+.button.primary.outline .icon-right img,
+.button.secondary.outline .icon-left img,
+.button.secondary.outline .icon-right img {
   fill: currentColor;
 }
