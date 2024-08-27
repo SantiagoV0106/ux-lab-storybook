@@ -1,5 +1,5 @@
 .button {
-  @apply w-44 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer text-lg font-semibold;
+  @apply w-44 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer text-lg font-medium font-sans;
 }
 
 .icon-left{

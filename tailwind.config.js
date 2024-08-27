@@ -3,6 +3,9 @@ export default {
   content: ["./index.css", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Nunito', 'sans-serif'],
+      },
       padding: {
         "custom-xs": "4px",
         "custom-sm": "8px",
