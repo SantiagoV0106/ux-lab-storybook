@@ -1,9 +1,5 @@
-/* 
- * TODO: Fix the icon color
-*/
-
 .button {
-  @apply w-40 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer;
+  @apply w-44 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer text-lg font-semibold;
 }
 
 .icon-left{
@@ -14,11 +10,16 @@
   @apply ml-custom-sm
 }
 
+.icon-left,
+.icon-right {
+  @apply inline-flex items-center; 
+}
+
 .icon-left img,
 .icon-right img {
+  @apply inline-block;
   width: 24px; 
   height: 24px;
-  vertical-align: middle; 
 }
 
 .button.primary {
@@ -60,12 +61,6 @@
 .button.secondary.focused.filled {
   box-shadow: inset 0 0 0 1px #42C0F0; 
 }
-
-.button.secondary .icon-left img,
-.button.secondary .icon-right img {
-  fill: currentColor;
-}
-
 /* Outline styles */
 
 .button.primary.outline {
