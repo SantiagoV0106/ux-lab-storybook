@@ -20,7 +20,3 @@ LinkButton.propTypes = {
   variant: PropTypes.oneOf(['ingresar', 'conocerMas']).isRequired,
   onClick: PropTypes.func,
 };
-
-LinkButton.defaultProps = {
-  variant: "ingresar"
-}

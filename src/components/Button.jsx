@@ -53,14 +53,3 @@ Button.propTypes = {
   rightIconSrc: PropTypes.string,
   onClick: PropTypes.func,
 };
-
-Button.defaultProps = {
-  type: "primary",
-  appearance: "filled",
-  state: "enabled",
-  iconLeft: true,
-  iconRight: true,
-  leftIconSrc: null,
-  rightIconSrc: null,
-  onClick: undefined,
-};
