@@ -23,10 +23,10 @@ export default {
     },
     iconLeft: { control: "boolean" },
     iconRight: { control: "boolean" },
-    onClick: { action: 'clicked' },
+    onClick: { action: "clicked" },
   },
   args: {
-    onClick: action('button-click'),
+    onClick: action("button-click"),
   },
 };
 
@@ -52,6 +52,6 @@ export const Secondary = {
     leftIconSrc: "add",
     iconRight: true,
     rightIconSrc: "add",
-    children: "Button Text"
+    children: "Button Text",
   },
 };
