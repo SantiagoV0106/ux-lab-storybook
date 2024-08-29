@@ -3,7 +3,11 @@ import { IconComponents } from "../utils/Icons"
 
 export const Icon = ({ name, fill }) => {
     const SelectedIcon = IconComponents[name];
-    return SelectedIcon ? <SelectedIcon fill={fill}/> : null;
+    if(!SelectedIcon){
+        console.error(`icon with ${name} doesnt exist`);
+        return null
+    }
+    return <SelectedIcon fill={fill}/> 
 };
 
 Icon.propTypes = {
