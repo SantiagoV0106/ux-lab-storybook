@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { IconComponents } from "../utils/Icons"
+import { IconComponents } from "../../utils/Icons"
 
 export const Icon = ({ name, fill }) => {
     const SelectedIcon = IconComponents[name];

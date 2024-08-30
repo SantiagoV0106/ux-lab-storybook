@@ -1,7 +1,7 @@
-import { LinkButton } from "../components/LinkButton";
+import { LinkButton } from "../../components/Buttons/LinkButton";
 
 export default {
-  title: "components/Link Button",
+  title: "components/Buttons/Link Button",
   component: LinkButton,
   parameters: {
     layout: "centered",

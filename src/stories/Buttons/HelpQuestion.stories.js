@@ -1,7 +1,7 @@
-import { HelpQuestion } from "../components/HelpQuestion";
+import { HelpQuestion } from "../../components/Buttons/HelpQuestion";
 
 export default {
-  title: "components/Help Question",
+  title: "components/Buttons/Help Question",
   component: HelpQuestion,
   parameters: {
     layout: "centered",

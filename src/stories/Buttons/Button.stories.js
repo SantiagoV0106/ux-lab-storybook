@@ -1,8 +1,8 @@
 import { action } from "@storybook/addon-actions";
-import { Button } from "../components/Button";
+import { Button } from "../../components/Buttons/Button";
 
 export default {
-  title: "components/Button",
+  title: "components/Buttons/Button",
   component: Button,
   parameters: {
     layout: "centered",
