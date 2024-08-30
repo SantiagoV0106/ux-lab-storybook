@@ -2,31 +2,29 @@ import PropTypes from "prop-types";
 import "./Button.css";
 import Icon from "./Icon";
 
-const getStyles = (type, appearance, state) =>
-  ["button", type, appearance, state].filter(Boolean).join(" ");
+const getStyles = (type, appearance, state, iconPosition) =>
+  ["button", type, appearance, state, iconPosition].filter(Boolean).join(" ");
 
 export const Button = ({
   children,
   type,
   appearance,
   state,
-  iconLeft,
-  iconRight,
-  leftIconSrc,
-  rightIconSrc,
+  iconSrc,
+  iconPosition,
   onClick
 }) => {
   return (
-    <button className={getStyles(type, appearance, state)} onClick={onClick}>
-      {iconLeft && leftIconSrc && (
+    <button className={getStyles(type, appearance, state, iconPosition)} onClick={onClick}>
+      {iconSrc && iconPosition === "left" && (
         <span className="icon-left">
-          <Icon name={leftIconSrc} fill="currentColor" />
+          <Icon name={iconSrc} fill="currentColor" />
         </span>
       )}
       {children}
-      {iconRight && rightIconSrc && (
+      {iconSrc && iconPosition === "right" && (
         <span className="icon-right">
-          <Icon name={rightIconSrc} fill="currentColor" />
+          <Icon name={iconSrc} fill="currentColor" />
         </span>
       )}
     </button>
@@ -44,9 +42,7 @@ Button.propTypes = {
     "clicked",
     "focused",
   ]),
-  iconLeft: PropTypes.bool,
-  iconRight: PropTypes.bool,
-  leftIconSrc: PropTypes.string,
-  rightIconSrc: PropTypes.string,
+  iconSrc:PropTypes.string,
+  iconPosition: PropTypes.oneOf(["left", "right"]),
   onClick: PropTypes.func,
 };

@@ -21,8 +21,10 @@ export default {
       control: "radio",
       options: ["enabled", "hovered", "disabled", "clicked", "focused"],
     },
-    iconLeft: { control: "boolean" },
-    iconRight: { control: "boolean" },
+    iconPosition: {
+      control: "radio",
+      options: ["left", "right"]
+    },
     onClick: { action: "clicked" },
   },
   args: {
@@ -35,10 +37,8 @@ export const Primary = {
     type: "primary",
     appearance: "filled",
     state: "enabled",
-    iconLeft: true,
-    leftIconSrc: "add",
-    iconRight: true,
-    rightIconSrc: "add",
+    iconSrc: "add",
+    iconPosition: "left",
     children: "Button Text",
   },
 };
@@ -48,10 +48,8 @@ export const Secondary = {
     type: "secondary",
     appearance: "filled",
     state: "enabled",
-    iconLeft: true,
-    leftIconSrc: "add",
-    iconRight: true,
-    rightIconSrc: "add",
+    iconSrc: "add",
+    iconPosition: "left", 
     children: "Button Text",
   },
 };
