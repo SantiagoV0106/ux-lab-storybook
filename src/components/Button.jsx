@@ -42,7 +42,7 @@ Button.propTypes = {
     "clicked",
     "focused",
   ]),
-  iconSrc:PropTypes.string,
+  iconSrc:PropTypes.oneOf(["add", "arrowRight"]), /* Here we´re gonna add all the avaible icons for the button */
   iconPosition: PropTypes.oneOf(["left", "right"]),
   onClick: PropTypes.func,
 };

@@ -21,6 +21,12 @@ export default {
       control: "radio",
       options: ["enabled", "hovered", "disabled", "clicked", "focused"],
     },
+    iconSrc: {
+      control: {
+        type: "select",
+        labels: ["add", "arrowRight"] /* Here we´re gonna add all the avaible icons for the button */
+      }
+    },
     iconPosition: {
       control: "radio",
       options: ["left", "right"]
