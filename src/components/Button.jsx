@@ -2,9 +2,6 @@ import PropTypes from "prop-types";
 import "./Button.css";
 import Icon from "./Icon";
 
-/* 
- * TODO: Add the Font and Font-size 
-*/
 const getStyles = (type, appearance, state) =>
   ["button", type, appearance, state].filter(Boolean).join(" ");
 
