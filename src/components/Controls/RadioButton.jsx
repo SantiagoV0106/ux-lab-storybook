@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 /* 
-* Preguntar sobre si deberia de funcionar de manera en que pueda alternar al dar click 
-* PERFECCIONAR CSS
+TODO Preguntar sobre si deberia de funcionar de manera en que pueda alternar al dar click 
+TODO PERFECCIONAR CSS
 */
 export const RadioButton = ({ state, onClick }) => {
   const getStyles = (state) => {
     switch (state) {
       case "unable":
-        return "bg-neutral-200 text-neutral-500 cursor-not-allowed";
+        return "bg-neutral-700 text-neutral-500 cursor-not-allowed";
       case "hovered":
         return "bg-neutral-50 border-primary-darkBlue-300 cursor-pointer";
       case "selected":
@@ -24,7 +24,7 @@ export const RadioButton = ({ state, onClick }) => {
     >
       <input
         type="radio"
-        className="form-radio h-4 w-4 text-primary-darkBlue-300"
+        className="form-radio h-5 w-5 text-primary-darkBlue-300"
         disabled={state === "unable"}
       />
     </div>
