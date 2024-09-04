@@ -3,6 +3,14 @@ export default {
   content: ["./index.css", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Nunito Sans"', 'sans-serif'],
+      },
+      fontWeight: {
+        'semibold': 600,
+        'bold': 700,
+        'regular': 400,
+      },
       padding: {
         "custom-xs": "4px",
         "custom-sm": "8px",
@@ -20,7 +28,7 @@ export default {
         "custom-lg": "24px",
         "custom-xl": "32px",
       },
-      radius: {
+      borderRadius: {
         /* With Tailwind rounded === border radius */
         "custom-xs": "2px",
         "custom-sm": "4px",
@@ -70,6 +78,10 @@ export default {
           successColor: "#3BD4AE",
           errorColor: "#EB5757",
           wariningColor: "#FFCD00",
+        },
+        background: {
+          primary: "#F4F7F9",
+          secondary: "#FFFFFF",
         },
         neutral: {
           50: "#FFFFFF",
