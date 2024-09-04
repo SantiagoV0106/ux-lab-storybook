@@ -1,17 +1,20 @@
 import PropTypes from "prop-types";
-import "./ToggleSwitch.css"; 
-/* 
-TODO Use an Input type Checkbox to ease the info collection
-*/
-export const ToggleSwitch = ({ isOn, onToggle }) => {
+import "./ToggleSwitch.css";
+
+export const ToggleSwitch = ({ isOn, onToggle, name }) => {
   return (
-    <div
-      className={`toggle-container ${isOn ? "toggle-on" : "toggle-off"}`}
-      onClick={onToggle}
-    >
-      <span
-        className={`toggle-knob ${isOn ? "toggle-knob-on" : "toggle-knob-off"}`}
+    <div className="toggle-switch">
+      <input
+        type="checkbox"
+        className="toggle-switch-checkbox"
+        id={name}
+        checked={isOn}
+        onChange={onToggle}
       />
+      <label className="toggle-switch-label" htmlFor={name}>
+        <span className="toggle-switch-inner" />
+        <span className="toggle-switch-knob" />
+      </label>
     </div>
   );
 };
@@ -19,4 +22,5 @@ export const ToggleSwitch = ({ isOn, onToggle }) => {
 ToggleSwitch.propTypes = {
   isOn: PropTypes.bool.isRequired,
   onToggle: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };

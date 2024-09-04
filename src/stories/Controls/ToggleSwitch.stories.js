@@ -14,13 +14,13 @@ export default {
 };
 
 export const On = {
-    args: {
-        isOn: true,
-    }
-}
+  args: {
+    isOn: true,
+  },
+};
 
 export const Off = {
-    args: {
-        isOn: false,
-    }
-}
+  args: {
+    isOn: false,
+  },
+};
