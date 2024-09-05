@@ -83,6 +83,11 @@ export default {
           primary: "#F4F7F9",
           secondary: "#FFFFFF",
         },
+        text:{
+          text: "#595959",
+          caption: "#737373",
+          title: "#0041A3"
+        },
         neutral: {
           50: "#FFFFFF",
           100: "#F4F7F9",
