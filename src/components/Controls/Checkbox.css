@@ -1,0 +1,26 @@
+/* Checkbox.css */
+.checkbox-container {
+  @apply w-5 h-5 flex items-center justify-center cursor-pointer relative;
+}
+
+.checkbox {
+  @apply w-4 h-4 rounded relative flex items-center justify-center;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+}
+
+.checkbox-container.enabled .checkbox {
+  @apply border-neutral-700; /* Border color for enabled state */
+}
+
+.checkbox-container.hovered .checkbox {
+  @apply border-primary-darkBlue-300; /* Border color for hovered state */
+}
+
+.checkbox-container.selected .checkbox {
+  @apply bg-primary-darkBlue-300  border-primary-darkBlue-300; /* Background and border color for selected state */
+}
+
+
+
