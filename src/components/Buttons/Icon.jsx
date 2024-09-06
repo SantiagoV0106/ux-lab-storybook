@@ -11,7 +11,7 @@ export const Icon = ({ name, fill }) => {
 };
 
 Icon.propTypes = {
-    name: PropTypes.oneOf(['add','arrowRight', 'helpQuestion']).isRequired,
+    name: PropTypes.oneOf(['add','arrowRight', 'helpQuestion', 'shop']).isRequired,
     fill: PropTypes.string.isRequired,
 }
 
