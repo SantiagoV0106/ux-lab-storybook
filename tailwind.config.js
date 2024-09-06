@@ -11,6 +11,10 @@ export default {
         'bold': 700,
         'regular': 400,
       },
+      fontSize: {
+        "xxxs": "8px",
+        "xxs": "10px",
+      },
       padding: {
         "custom-xs": "4px",
         "custom-sm": "8px",
