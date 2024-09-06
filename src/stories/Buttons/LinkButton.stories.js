@@ -10,7 +10,7 @@ export default {
   argTypes: {
     variant: {
       control: 'radio',
-      options: ["ingresar", "conocerMas"],
+      options: ["ingresar", "conocer más"],
     },
     onClick: { action: 'clicked' },
   }
