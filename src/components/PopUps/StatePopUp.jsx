@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import xImg from '../../assets/x.png'
 import arrowRightImg from '../../assets/arrow-right.png'
+import { CloseBtn } from './CloseBtn';
 
 export const StatePopUp = ({state, title, subtitle, execution, description}) => {
   return (
-    <div className='flex flex-col items-start w-80 py-4 px-4 bg-blue-50 h-fit gap-2'>
+    <div className='flex flex-col items-start w-80 py-4 px-4 bg-background-secondary h-fit gap-2'>
         <div className="flex flex-row justify-center w-full relative">
             <p className={`font-bold text-sm ${
                 state === 'Completado' ? 'text-system-successColor' :
@@ -14,9 +14,7 @@ export const StatePopUp = ({state, title, subtitle, execution, description}) => 
                 }`}>
             {state}
             </p>
-            <button className='absolute right-0'>
-                <img src={xImg} alt="" />
-            </button>
+            <CloseBtn style='absolute right-0'/>
         </div>
 
         <div className='flex flex-col gap-4 w-full'>

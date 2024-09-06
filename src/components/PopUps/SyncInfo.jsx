@@ -1,18 +1,16 @@
 import PropTypes from 'prop-types';
 import SyncInfoImg from '../../assets/sycn-info-image.png'
-import xImg from '../../assets/x.png'
 import ErrorBar from '../../assets/status-bar-error.png'
 import ProcessBar from '../../assets/status-bar-proceso.png'
 import CompletedBar from '../../assets/status-bar-completado.png'
+import { CloseBtn } from './CloseBtn';
 
 export const SyncInfo = ({state}) => {
   return (
     <div className='flex flex-col gap-2 bg-background-secondary w-80 h-fit items-center'>
         <div className='flex relative'>
             <img className='w-full' src={SyncInfoImg} alt="" />
-            <button className='absolute right-0 pr-4 pt-4'>
-                <img src={xImg} alt="" />
-            </button>
+            <CloseBtn style='absolute right-0 pr-4 pt-4'/>
         </div>
         
         <div className='flex flex-col px-4 pb-4 items-center gap-2'>
@@ -31,9 +29,7 @@ export const SyncInfo = ({state}) => {
             </div>
 
             <h4 className={`${
-                state === 'Sin conexion' ? 'text-system-errorColor' :
-                state === 'Procesando' ? 'text-system-wariningColor' :
-                state === 'Completado' ? 'text-system-successColor' : ''
+                state === 'Sin conexion' ? 'text-system-errorColor' : 'text-text-caption'
                 } self-start text-xxs font-bold`}>
                 {`${
                     state === 'Sin conexion' ? 'No tienes conexión a internet' :
@@ -41,9 +37,7 @@ export const SyncInfo = ({state}) => {
                     state === 'Completado' ? '¡Completado!' : ''
                 }` }
             </h4>
-
         </div>
-        
     </div>
   )
 }
