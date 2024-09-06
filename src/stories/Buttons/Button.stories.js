@@ -24,7 +24,7 @@ export default {
     iconSrc: {
       control: {
         type: "select",
-        labels: ["add", "arrowRight"] /* Here we´re gonna add all the avaible icons for the button */
+        labels: ["add", "arrowRight, shop"] /* Here we´re gonna add all the avaible icons for the button */
       }
     },
     iconPosition: {

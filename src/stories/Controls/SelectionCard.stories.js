@@ -21,6 +21,12 @@ export default {
           options: ['enabled', 'hovered', 'selected'],
           description: 'State of the checkbox',
         },
+        iconName:{
+          control:{
+            type: "select",
+            labels: ["add", "arrowRight", "shop"]
+          }
+        }
     }
 }
 
@@ -28,6 +34,7 @@ export const Default = {
     args: {
         title: "Nombre Empresa",
         caption: "Estado",
-        checkboxState: "enabled"
+        checkboxState: "enabled",
+        iconName: "shop"
     }
 }
