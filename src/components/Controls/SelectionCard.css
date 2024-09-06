@@ -1,0 +1,24 @@
+.card {
+    @apply flex items-center justify-between p-4 border border-gray-300 rounded-lg shadow-md w-[21rem] h-16;
+  }
+  
+  .content {
+    @apply flex items-center;
+  }
+  
+  .icon {
+    @apply mr-3;
+  }
+  
+  .text {
+    @apply flex flex-col;
+  }
+  
+  .title {
+    @apply text-lg font-semibold;
+  }
+  
+  .caption {
+    @apply text-sm text-gray-500;
+  }
+  
