@@ -2,7 +2,7 @@ import { Profile } from '../../components/MenuItems/Profile';
 import catImg from '../../assets/cat-image.png'
 
 export default {
-  title: 'Components/Profile',
+  title: 'Components/MenuItems/Profile',
   component: Profile,
 };
 

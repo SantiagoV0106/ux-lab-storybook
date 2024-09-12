@@ -1,7 +1,7 @@
 import { StatePopUp } from '../../components/PopUps/StatePopUp';
 
 export default {
-  title: 'Components/StatePopUp',
+  title: 'Components/PopUps/StatePopUp',
   component: StatePopUp,
 };
 

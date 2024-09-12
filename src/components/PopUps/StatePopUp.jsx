@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import arrowRightImg from '../../assets/arrow-right.png'
 import { CloseBtn } from './CloseBtn';
+import { Button } from '../Buttons/Button';
 
 export const StatePopUp = ({state, title, subtitle, execution, description}) => {
   return (
-    <div className='flex flex-col items-start w-80 py-4 px-4 bg-background-secondary h-fit gap-2'>
+    <div className='flex flex-col items-center w-80 py-4 px-4 bg-background-secondary h-fit gap-2'>
         <div className="flex flex-row justify-center w-full relative">
             <p className={`font-bold text-sm ${
                 state === 'Completado' ? 'text-system-successColor' :
@@ -28,12 +28,15 @@ export const StatePopUp = ({state, title, subtitle, execution, description}) => 
                 <h4 className='text-text-caption text-xxs'>{description}</h4>
             </div>
         </div>
+                    
+        <Button 
+            type="primary"
+            appearance="filled"
+            state="enabled"
+            iconSrc="arrowRight"
+            iconPosition="right"
+        >Button Text</Button>
 
-        {/* Es un ejemplo mientras utilizo el componente btn */}
-        <button className='w-full bg-text-title flex items-center justify-center text-neutral-50'>
-            Button Text <img src={arrowRightImg} alt="" />
-        </button>
-        
     </div>
   )
 }

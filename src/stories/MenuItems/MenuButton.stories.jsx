@@ -1,7 +1,7 @@
 import { MenuButton } from '../../components/MenuItems/MenuButton';
 
 export default {
-  title: 'Components/MenuButton',
+  title: 'Components/MenuItems/MenuButton',
   component: MenuButton,
 };
 

@@ -1,7 +1,7 @@
 import { SyncInfo } from '../../components/PopUps/SyncInfo';
 
 export default {
-  title: 'Components/SyncInfo',
+  title: 'Components/PopUps/SyncInfo',
   component: SyncInfo,
 };
 

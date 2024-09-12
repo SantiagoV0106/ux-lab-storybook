@@ -1,6 +1,6 @@
 import { MenuBar } from '../../components/MenuItems/MenuBar';
 export default {
-  title: 'Components/MenuBar',
+  title: 'Components/MenuItems/MenuBar',
   component: MenuBar,
 };
 
