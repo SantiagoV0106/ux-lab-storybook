@@ -1,0 +1,24 @@
+.link-button {
+    @apply flex items-center font-medium text-lg border-none bg-transparent cursor-pointer font-sans;
+    @apply transition-colors duration-300;
+    color: #41C0F0;
+    text-transform: uppercase
+  }
+  
+  .link-button.ingresar {
+    color: #41C0F0
+  }
+  
+  .link-button.conocerMas {
+    color: #41C0F0
+  }
+  
+  .link-button .icon-right {
+    @apply ml-2 flex items-center;
+  }
+  
+  .link-button .icon-right svg {
+    width: 14px;
+    height: 14px; 
+}
+  
