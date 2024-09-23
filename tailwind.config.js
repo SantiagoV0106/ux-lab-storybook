@@ -77,7 +77,7 @@ export default {
         system: {
           successColor: "#3BD4AE",
           errorColor: "#EB5757",
-          wariningColor: "#FFCD00",
+          warningColor: "#FFCD00",
         },
         background: {
           primary: "#F4F7F9",
