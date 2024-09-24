@@ -73,7 +73,7 @@ export const IconComponents = {
       </svg>
     );
   },
-  arrowSimple: ({ fill }) => {
+  arrowSimpleRight: ({ fill }) => {
     return (
       <svg
         width="18"
@@ -86,6 +86,24 @@ export const IconComponents = {
           fillRule="evenodd"
           clipRule="evenodd"
           d="M5.14285 14.9344L6.30042 16.0438L13.0686 9.5576L6.30042 3.07143L5.14285 4.18076L10.7535 9.5576L5.14285 14.9344Z"
+          fill={fill}
+        />
+      </svg>
+    );
+  },
+  arrowSimpleLeft: ({ fill }) => {
+    return (
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M12.2114 3.68077L11.0539 2.57143L4.28567 9.05761L11.0539 15.5438L12.2114 14.4344L6.60081 9.05761L12.2114 3.68077Z"
           fill={fill}
         />
       </svg>
@@ -114,10 +132,11 @@ export const IconComponents = {
 IconComponents.add.propTypes = {
   name: PropTypes.oneOf([
     "add",
-    "arrowRight",
+    "arrowSimpleRight",
     "helpQuestion",
     "shop",
-    "arrowSimple",
+    "arrowSimpleRight",
+    "arrowSimpleLeft",
     "checkIcon",
   ]),
   fill: PropTypes.string,

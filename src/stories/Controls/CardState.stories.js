@@ -21,7 +21,7 @@ export default {
           "helpQuestion",
           "shop",
           "checkIcon",
-          "arrowSimple",
+          "arrowSimpleRight",
         ],
       },
       description: "Icon to display on the card",

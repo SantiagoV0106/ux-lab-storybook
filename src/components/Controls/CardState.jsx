@@ -22,7 +22,7 @@ export const CardState = ({ text, iconName, state = "notCompleted" }) => {
       </div>
       <p className="inner-text">{text}</p>
       <div className="arrow-container">
-        <Icon name="arrowSimple" fill="currentColor" />
+        <Icon name="arrowSimpleRight" fill="currentColor" />
       </div>
     </div>
   );
@@ -36,7 +36,7 @@ CardState.propTypes = {
     "helpQuestion",
     "shop",
     "checkIcon",
-    "arrowSimple",
+    "arrowSimpleRight",
   ]).isRequired,
   state: PropTypes.oneOf(["completed", "inProgress", "notCompleted"]).isRequired,
 };

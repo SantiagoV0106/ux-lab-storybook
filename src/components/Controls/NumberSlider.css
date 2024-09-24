@@ -1,0 +1,23 @@
+.number-slider {
+    @apply text-center font-sans max-w-80 text-primary-darkBlue-300;
+  }
+  
+  .slider-container {
+    @apply flex items-center justify-center text-primary-darkBlue-300;
+  }
+  
+  .page-number {
+    @apply mx-2 text-base transition-all duration-200 text-neutral-800 p-custom-sm;
+  }
+  
+  .page-number.active {
+    @apply text-2xl font-bold text-primary-darkBlue-300;
+  }
+  
+  h3 {
+    @apply m-0 mb-2 text-sm;
+  }
+
+  hr{
+    @apply m-0
+  }
