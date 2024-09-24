@@ -1,9 +1,8 @@
-import { Dropdown } from "./Dropdown";
-import { DemoIcon } from "./Dropdown";
+import { Select } from "../../components/Select/Select";
 
 export default {
-    title: 'Example/Dropdown',
-    component: Dropdown,
+    title: 'Example/Select',
+    component: Select,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: 'centered',
@@ -15,12 +14,10 @@ export default {
 
 export const Example = {
     args: {
-        title: 'title',
-        subtitle: 'subtitle',
-        detailTitle: 'detail title',
-        state: 'no comenzada',
-        schedule: 'schedule',
-        children: 'detail content',
-        icon: DemoIcon
+        label: 'Label',
+        required: false,
+        defaultOption: 'Default Option',
+        options: ['Option 1', 'Option 2', 'Option 3'],
+        name: 'Select'
     }
 }

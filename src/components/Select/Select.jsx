@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ChevronDown, ChevronUp } from "./Dropdown"
+import { ChevronDown, ChevronUp } from "../Dropdown/Dropdown"
 import PropTypes from "prop-types"
 
 export const Select = ({ label, required, defaultOption, options, name }) => {

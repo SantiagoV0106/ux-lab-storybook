@@ -1,4 +1,4 @@
-import { Select } from "./stories/Select"
+import { Select } from "./components/Select/Select"
 
 function App() {
 
