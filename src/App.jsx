@@ -1,10 +1,10 @@
-import { Header } from "./components/Header/Header"
+import { AsideMenu } from "./components/AsideMenu/AsideMenu"
 
 function App() {
   
   return (
     <div className="px-24">
-      <Header/>
+      <AsideMenu/>
     </div>
   )
 }

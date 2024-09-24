@@ -1,18 +1,22 @@
+import PropTypes from 'prop-types'
 import noProfile from '../Header/noProfile.webp'
 
-export const Header = ({searchBar}) => {
+export const Header = ({searchBar = true}) => {
     return (
-        <header className="flex items-center justify-between text-slate-700 bg-[#0041A3] px-4 py-2 max-w-[412px]">
+        <header className="flex items-center justify-between gap-4 text-slate-700 bg-[#0041A3] px-4 py-2 min-w-[342px]">
             <MenuIcon/>
 
-            <div className="flex items-center gap-4 p-2 rounded-md bg-white">
-                <SearchIcon/>
-                <input placeholder="Buscar" className="appearance-none outline-none placeholder:text-[#B1CEE2]" type="text" />
-            </div>
+            {
+                searchBar &&
+                <div className="flex items-center gap-4 p-2 rounded-md bg-white">
+                    <SearchIcon/>
+                    <input placeholder="Buscar" className="appearance-none outline-none placeholder:text-[#B1CEE2]" type="text" />
+                </div>
+            }
 
             <div className="flex items-center gap-4">
                 <BellIcon/>
-                <img src={noProfile} className="aspect-square w-10 rounded-full" alt="" />
+                <img src={noProfile} className="aspect-square w-9 rounded-full" alt="" />
             </div>
         </header>
     )
@@ -31,3 +35,11 @@ const BellIcon = () => <svg width="18" height="19" viewBox="0 0 18 19" fill="non
 const SearchIcon = () => <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 12.5001L15.4286 15.9287M13.7143 8.64296C13.7143 11.72 11.2199 14.2144 8.14287 14.2144C5.06586 14.2144 2.57144 11.72 2.57144 8.64296C2.57144 5.56595 5.06586 3.07153 8.14287 3.07153C11.2199 3.07153 13.7143 5.56595 13.7143 8.64296Z" stroke="#B1CEE2" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
+
+Header.propTypes = {
+    searchBar: PropTypes.bool
+}
+
+Header.defaultProps = {
+    searchBar: true
+}
