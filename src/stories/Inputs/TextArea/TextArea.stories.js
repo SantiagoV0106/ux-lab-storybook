@@ -1,8 +1,7 @@
-import { Select } from "../../components/Select/Select";
-
+import { TextArea } from "../../../components/Inputs/TextArea/TextArea";
 export default {
-    title: 'Example/Select',
-    component: Select,
+    title: 'Example/TextArea',
+    component: TextArea,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: 'centered',
@@ -12,12 +11,10 @@ export default {
     // More on argTypes: https://storybook.js.org/docs/api/argtypes
 };
 
-export const Example = {
+export const Text = {
     args: {
-        label: 'Label',
-        required: false,
-        defaultOption: 'Default Option',
-        options: ['Option 1', 'Option 2', 'Option 3'],
-        name: 'Select'
+        label: 'label',
+        placeholder: 'place your text here',
+        required: false
     }
 }
