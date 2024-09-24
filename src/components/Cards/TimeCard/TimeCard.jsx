@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
-import './tiempoestimado.css'
 
-export const TiempoEstimado = ({time}) => {
+export const TimeCard = ({time}) => {
     return(
         <article className="flex">
             <header>
@@ -16,10 +15,10 @@ export const TiempoEstimado = ({time}) => {
     )
 }
 
-TiempoEstimado.propTypes = {
+TimeCard.propTypes = {
     time : PropTypes.string.isRequired
 }
 
-TiempoEstimado.defaultProps = {
+TimeCard.defaultProps = {
     time : '00:00:00'
 }

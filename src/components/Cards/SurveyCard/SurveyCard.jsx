@@ -9,7 +9,7 @@ const ArrowIcon = () => {
     )
 }
 
-export const Encuesta = ({ progress, formName, executed, showProgressBar, showMeta }) => {
+export const SurveyCard = ({ progress, formName, executed, showProgressBar, showMeta }) => {
     return (
         <article className="flex">
             <section className="bg-background-secondary rounded-lg flex items-center gap-6 py-2 px-4 min-w-[345px] justify-between">
@@ -48,7 +48,7 @@ export const Encuesta = ({ progress, formName, executed, showProgressBar, showMe
     )
 }
 
-Encuesta.propTypes = {
+SurveyCard.propTypes = {
     formName: PropTypes.string.isRequired,
     progress: PropTypes.oneOf([10, 60, 100]).isRequired,
     executed: PropTypes.number,

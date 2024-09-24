@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types'
 import report_activity_banner from '../../assets/images/report_activity_banner.jpg'
 import { Button } from "../../Buttons/Button"
+import { Select } from '../../Inputs/Select/Select'
 
 const CloseIcon = () => {
     return (
@@ -10,7 +12,7 @@ const CloseIcon = () => {
     )
 }
 
-export const ReportActivityCard = () => {
+export const ReportActivityCard = ({options}) => {
     return (
         <article className="flex">
             <section className={` bg-background-secondary rounded-lg flex flex-col gap-[13px] max-w-[340px] min-h-[150px]`} >
@@ -34,14 +36,13 @@ export const ReportActivityCard = () => {
                         </p>
                     </div>
 
-                    <div className=''>
-                        <label className='text-primary-darkBlue-300 text-xs font-bold' htmlFor="novedad">Tipo de novedad</label>
-                        <input className='w-full border border-primary-blue-200 p-1 rounded-[4px]' type="text" name="novedad" id="novedad" />
-                    </div>
-                    <div>
-                        <label className='text-primary-darkBlue-300 text-xs font-bold' htmlFor="novedad">Observaciones</label>
-                        <input className='w-full h-20 border border-primary-blue-200 p-1 rounded-[4px] focus:outline-none focus:ring-2 ' type="text" name="novedad" id="novedad" />
-                    </div>
+                    <Select label='Tipo de novedad' defaultOption='Seleccione un tipo de novedad' options={options} name='Select' />
+                            <label className="flex flex-col gap-[4px] text-[#0041A3] font-bold w-full">
+                                <span>
+                                    Observaciones
+                                </span>
+                                <textarea  className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
+                            </label>
                     <div className='flex flex-col justify-center mt-8'>
                         <Button type='primary' appearance='filled' label='Reportar Novedad' state='enabled' />
 
@@ -51,4 +52,9 @@ export const ReportActivityCard = () => {
             </section>
         </article>
     )
+}
+
+ReportActivityCard.propTypes = {
+    options: PropTypes.array.isRequired,
+
 }

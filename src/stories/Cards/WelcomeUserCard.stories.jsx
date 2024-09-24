@@ -1,8 +1,8 @@
-import {BienvenidaUsuarios} from '../../components/Cards/BienvenidaUsuario/BienvenidaUsuario'
+import {WelcomeUserCard} from '../../components/Cards/WelcomeUserCard/WelcomeUserCard'
 
 export default {
-    title: "components/Cards/Bienvenida Usuarios",
-    component: BienvenidaUsuarios,
+    title: "components/Cards/Welcome Card",
+    component: WelcomeUserCard,
     parameters: {
         layout: 'centered',
     },
@@ -16,7 +16,7 @@ export default {
     },
 }
 
-const Template = (args) => <BienvenidaUsuarios {...args} />
+const Template = (args) => <WelcomeUserCard {...args} />
 
 export const Default = Template.bind({})
 

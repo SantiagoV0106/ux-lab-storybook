@@ -1,8 +1,8 @@
-import { ResumenActividadesEjecutadas } from "../../components/Cards/ResumenActividadesEjecutadas/ResumenActividadesEjecutadas";
+import { ExecutedActivitiesCard } from "../../components/Cards/ExecutedActivitiesCard/ExecutedActivitiesCard";
 
 export default {
-    title: "components/Cards/Resumen Actividades Ejecutadas",
-    component: ResumenActividadesEjecutadas,
+    title: "components/Cards/Executed Activities Card",
+    component: ExecutedActivitiesCard,
     parameters: {
         layout: 'centered',
     },
@@ -12,7 +12,7 @@ export default {
     },
 };
 
-const Template = (args) => <ResumenActividadesEjecutadas {...args} />
+const Template = (args) => <ExecutedActivitiesCard {...args} />
 
 export const Unidad1 = Template.bind({})
 Unidad1.args = {

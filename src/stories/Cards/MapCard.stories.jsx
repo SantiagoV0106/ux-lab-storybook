@@ -1,7 +1,7 @@
 import { MapCard } from "../../components/Cards/MapCard/MapCard";
 
 export default {
-    title: "components/Cards/Tarjeta Mapa",
+    title: "components/Cards/Map Card",
     component: MapCard,
     parameters: {
         layout: 'centered',

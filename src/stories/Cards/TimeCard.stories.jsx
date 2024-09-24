@@ -1,8 +1,8 @@
-import { TiempoEstimado } from "../../components/Cards/TiempoEstimado/TiempoEstimado";
+import { TimeCard } from "../../components/Cards/TimeCard/TimeCard";
 
 export default {
-    title: "components/Cards/Tiempo Estimado",
-    component: TiempoEstimado,
+    title: "components/Cards/Time Card",
+    component: TimeCard,
     parameters: {
         layout: 'centered',
     },

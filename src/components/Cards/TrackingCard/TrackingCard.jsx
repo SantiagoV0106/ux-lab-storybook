@@ -11,7 +11,7 @@ const CheckIcon = () => {
 }
 
 
-export const SeguimientoDeEjecucion = ({ activity, progress }) => {
+export const TrackingCard = ({ activity, progress }) => {
     return (
         <article className="flex">
             <header>
@@ -36,7 +36,7 @@ export const SeguimientoDeEjecucion = ({ activity, progress }) => {
 }
 
 
-SeguimientoDeEjecucion.propTypes = {
+TrackingCard.propTypes = {
     activity : PropTypes.string.isRequired,
     progress : PropTypes.oneOf([10, 60, 100]).isRequired
 }

@@ -1,8 +1,8 @@
-import { SeguimientoDeEjecucion } from "../../components/Cards/SeguimientoDeEjecucion/SeguimientoDeEjecucion";
+import { TrackingCard } from "../../components/Cards/TrackingCard/TrackingCard";
 
 export default {
-    title: "components/Cards/Seguimiento de ejecución",
-    component: SeguimientoDeEjecucion,
+    title: "components/Cards/Tracking Card",
+    component: TrackingCard,
     parameters: {
         layout: 'centered',
     },
@@ -13,7 +13,7 @@ export default {
     },
 }
 
-const Template = (args) => <SeguimientoDeEjecucion {...args}/>
+const Template = (args) => <TrackingCard {...args}/>
 
 export const Default = Template.bind({})
 

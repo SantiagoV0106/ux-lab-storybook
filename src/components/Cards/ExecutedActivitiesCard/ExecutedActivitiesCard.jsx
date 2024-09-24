@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import './resumenactividadesejecutadas.css'
+import './executedActivitiesCard.css'
 
 const BagCheckedIcon = () => {
     return (
@@ -28,24 +28,24 @@ const content_unidad1_3 = [
 
 const content_unidad_4 = [
     {
-        id : 'unidad-1',
-        inventario : 6
+        id: 'unidad-1',
+        inventario: 6
     },
     {
-        id : 'unidad-2',
-        inventario : 2
+        id: 'unidad-2',
+        inventario: 2
     },
     {
-        id : 'unidad-3',
-        extra : 2   
+        id: 'unidad-3',
+        extra: 2
     },
     {
-        id : 'unidad-4',
-        inventario : 9
+        id: 'unidad-4',
+        inventario: 9
     },
 ]
 
-export const ResumenActividadesEjecutadas = ({ variant }) => {
+export const ExecutedActivitiesCard = ({ variant }) => {
     return (
         <article className="flex">
             <header>
@@ -53,7 +53,7 @@ export const ResumenActividadesEjecutadas = ({ variant }) => {
                     Resumen actividades ejecutadas
                 </h2>
                 <section className="bg-background-secondary text-center rounded-lg flex gap-2 items-center py-2 px-8 min-w-[342px] h-[66px]"
-                id={`variant-${variant}`}
+                    id={`variant-${variant}`}
                 >
                     {
                         variant === 'unidad-1' &&
@@ -107,6 +107,6 @@ export const ResumenActividadesEjecutadas = ({ variant }) => {
     )
 }
 
-ResumenActividadesEjecutadas.propTypes = {
+ExecutedActivitiesCard.propTypes = {
     variant: PropTypes.oneOf(['unidad-1', 'unidad-1-3', 'unidad-4']).isRequired
 }

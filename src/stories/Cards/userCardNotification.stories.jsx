@@ -1,7 +1,7 @@
 import { UserCardNotification } from "../../components/Cards/UserCardNotificacion/UserCardNotificacion"
 
 export default {
-    title: "components/Cards/Notificacion de usuario",
+    title: "components/Cards/User Notification Card",
     component: UserCardNotification,
     parameters: {
         layout: 'centered',

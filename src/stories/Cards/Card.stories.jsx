@@ -1,8 +1,8 @@
-import { Tarjeta } from "../../components/Cards/Tarjeta/Tarjeta";
+import { Card } from "../../components/Cards/Card/Card";
 
 export default {
-    title: "components/Cards/Tarjeta",
-    component: Tarjeta,
+    title: "components/Cards/Default Card",
+    component: Card,
     parameters: {
         layout: 'centered',
     },
@@ -19,7 +19,7 @@ export default {
     },
 }
 
-const Template = (args) => <Tarjeta {...args} />
+const Template = (args) => <Card {...args} />
 
 export const Close = Template.bind({})
 

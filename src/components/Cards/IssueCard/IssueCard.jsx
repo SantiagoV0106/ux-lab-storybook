@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import novedad_card_banner from '../../assets/images/novedad_card_banner.jpg'
 import { Button } from '../../Buttons/Button'
-import { ImageCard } from '../FotosTomadas/ImageCard'
+import { ImageCard } from '../ImageCard/ImageCard'
 import { Select } from '../../Inputs/Select/Select'
 
-export const NovedadCard = ({ state }) => {
+export const IssueCard = ({ state, options }) => {
     return (
         <article className="flex">
             <section className={` bg-background-secondary rounded-lg flex flex-col gap-[13px] max-w-[340px] min-h-[150px]`} >
@@ -19,11 +19,13 @@ export const NovedadCard = ({ state }) => {
                 {
                     state === 'information' ?
                         <div className='flex flex-col w-full pb-7 px-3 gap-2'>
-                            <Select />
-                            <div>
-                                <label className='text-primary-darkBlue-300 text-xs font-bold' htmlFor="novedad">Observaciones</label>
-                                <input className='w-full h-20 border border-primary-blue-200 p-1 rounded-[4px] focus:outline-none focus:ring-2 ' type="text" name="novedad" id="novedad" />
-                            </div>
+                            <Select label='Tipo de novedad' defaultOption='Seleccione un tipo de novedad' options={options} name='Select' />
+                            <label className="flex flex-col gap-[4px] text-[#0041A3] font-bold w-full">
+                                <span>
+                                    Observaciones
+                                </span>
+                                <textarea  className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
+                            </label>
                             <ImageCard />
                             <div className='flex flex-col gap-1 mt-5'>
                                 <Button type='primary' appearance='filled' label='Agregar foto' iconPosition='left' state='hovered' />
@@ -49,6 +51,7 @@ export const NovedadCard = ({ state }) => {
     )
 }
 
-NovedadCard.propTypes = {
+IssueCard.propTypes = {
+    options : PropTypes.array.isRequired,
     state: PropTypes.oneOf(['information', 'state', 'question']).isRequired
 }

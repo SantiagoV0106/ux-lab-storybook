@@ -17,7 +17,7 @@ const ArrowRightIcon = () => {
     )
 }
 
-export const Tarjeta = ({ cardTitle, caption, open, showCaption, body, title, subTitle, showArrow }) => {
+export const Card = ({ cardTitle, caption, open, showCaption, body, title, subTitle, showArrow }) => {
     const [isOpen, setIsOpen] = useState(false)
 
 
@@ -61,7 +61,7 @@ export const Tarjeta = ({ cardTitle, caption, open, showCaption, body, title, su
     )
 }
 
-Tarjeta.propTypes = {
+Card.propTypes = {
     cardTitle: PropTypes.string.isRequired,
     caption: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,

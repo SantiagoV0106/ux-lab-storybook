@@ -1,7 +1,7 @@
 import { ActivityCard } from "../../components/Cards/ActivityCard/ActivityCard"
 
 export default {
-    title: "components/Cards/Tarjeta de actividad",
+    title: "components/Cards/Activity Card",
     component: ActivityCard,
     parameters: {
         layout: 'centered',

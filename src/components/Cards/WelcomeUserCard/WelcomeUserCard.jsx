@@ -32,7 +32,7 @@ const MsgIcon = () => {
     )
 }
 
-export const BienvenidaUsuarios = ({ showBanner, showProfile, title, caption, body }) => {
+export const WelcomeUserCard = ({ showBanner, showProfile, title, caption, body }) => {
     return (
         <article className="flex">
             <section className="bg-background-secondary rounded-lg flex flex-col max-w-[340px] gap-2">
@@ -76,7 +76,7 @@ export const BienvenidaUsuarios = ({ showBanner, showProfile, title, caption, bo
     )
 }
 
-BienvenidaUsuarios.propTypes = {
+WelcomeUserCard.propTypes = {
     caption: PropTypes.string.isRequire,
     title: PropTypes.string.isRequire,
     body: PropTypes.string.isRequire,
