@@ -6,7 +6,7 @@ const getStyles = (type, appearance, state, iconPosition) =>
   ["button", type, appearance, state, iconPosition].filter(Boolean).join(" ");
 
 export const Button = ({
-  children,
+  label,
   type,
   appearance,
   state,
@@ -21,7 +21,7 @@ export const Button = ({
           <Icon name={iconSrc} fill="currentColor" />
         </span>
       )}
-      {children}
+      {label}
       {iconSrc && iconPosition === "right" && (
         <span className="icon-right">
           <Icon name={iconSrc} fill="currentColor" />
@@ -32,7 +32,7 @@ export const Button = ({
 };
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   type: PropTypes.oneOf(["primary", "secondary"]).isRequired,
   appearance: PropTypes.oneOf(["filled", "outline"]).isRequired,
   state: PropTypes.oneOf([

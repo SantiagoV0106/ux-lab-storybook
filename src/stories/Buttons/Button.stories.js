@@ -45,7 +45,7 @@ export const Primary = {
     state: "enabled",
     iconSrc: "add",
     iconPosition: "left",
-    children: "Button Text",
+    label: "Button Text",
   },
 };
 
@@ -56,6 +56,6 @@ export const Secondary = {
     state: "enabled",
     iconSrc: "add",
     iconPosition: "left", 
-    children: "Button Text",
+    label: "Button Text",
   },
 };

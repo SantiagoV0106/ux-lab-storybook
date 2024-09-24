@@ -1,10 +1,10 @@
-import { BienvenidaUsuarios } from "./components/Cards/BienvenidaUsuario/BienvenidaUsuario"
+import { SmallTab } from "./components/Tabs/SmallTab"
 
 function App() {
   return (
     <>
       <h1>Hello UXLab / Storybook</h1>
-      <BienvenidaUsuarios />
+      <SmallTab />
     </>
 
   )
