@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import novedad_card_banner from '../../assets/images/novedad_card_banner.jpg'
 import { Button } from '../../Buttons/Button'
 import { ImageCard } from '../FotosTomadas/ImageCard'
+import { Select } from '../../Inputs/Select/Select'
 
 export const NovedadCard = ({ state }) => {
     return (
@@ -18,10 +19,7 @@ export const NovedadCard = ({ state }) => {
                 {
                     state === 'information' ?
                         <div className='flex flex-col w-full pb-7 px-3 gap-2'>
-                            <div className=''>
-                                <label className='text-primary-darkBlue-300 text-xs font-bold' htmlFor="novedad">Tipo de novedad</label>
-                                <input className='w-full border border-primary-blue-200 p-1 rounded-[4px]' type="text" name="novedad" id="novedad" />
-                            </div>
+                            <Select />
                             <div>
                                 <label className='text-primary-darkBlue-300 text-xs font-bold' htmlFor="novedad">Observaciones</label>
                                 <input className='w-full h-20 border border-primary-blue-200 p-1 rounded-[4px] focus:outline-none focus:ring-2 ' type="text" name="novedad" id="novedad" />
