@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
-/* 
-TODO Preguntar sobre si deberia de funcionar de manera en que pueda alternar al dar click 
-TODO PERFECCIONAR CSS
-*/
+
 export const RadioButton = ({ state, onClick }) => {
   const getStyles = (state) => {
     switch (state) {
