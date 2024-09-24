@@ -1,11 +1,16 @@
-import { DemoIcon, Dropdown } from "./stories/Dropdown"
+import { Select } from "./stories/Select"
 
 function App() {
+
+const options = [
+  'primera',
+  'segunda',
+  'tercera'
+]
+  
   return (
     <div className="px-24 py-12 bg-gray-200">
-      <Dropdown title='title' subtitle='subtitle' detailTitle='detail Title' detailSubtitle='detail subtitle' icon={<DemoIcon/>}>
-        Aqui va el children
-      </Dropdown>
+      <Select label='select something' defaultOption='default' options={options}/>
     </div>
   )
 }
