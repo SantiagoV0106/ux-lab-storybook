@@ -13,11 +13,11 @@ export default {
       description: "Text to display",
     },
     iconName: {
-      control: false, // Deshabilitamos el control para iconName
+      control: false,
       description: "Icon to display on the card (fixed to checkIcon)",
     },
     showIcon: {
-      control: "boolean", // Agregamos control para showIcon
+      control: "boolean", 
       description: "Toggle to show or hide the icon",
     },
     state: {
@@ -30,18 +30,29 @@ export default {
   },
 };
 
-export const Default = {
+export const Completed = {
   args: {
-    text: "Task Description",
-    iconName: "checkIcon",
-    showIcon: true,
+    text: "Task Completed",
+    iconName: "checkIcon", 
+    showIcon: true, 
+    state: "completed",
   },
 };
 
-export const WithoutIcon = {
+export const InProgress = {
   args: {
-    text: "Task Description",
+    text: "Task In Progress",
     iconName: "checkIcon", 
-    showIcon: false, 
+    showIcon: true, 
+    state: "inProgress", 
+  },
+};
+
+export const NotCompleted = {
+  args: {
+    text: "Task Not Completed",
+    iconName: "checkIcon", 
+    showIcon: true, 
+    state: "notCompleted", 
   },
 };
