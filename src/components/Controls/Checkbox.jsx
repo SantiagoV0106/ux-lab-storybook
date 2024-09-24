@@ -10,6 +10,8 @@ export const Checkbox = ({ state }) => {
   const [isChecked, setIsChecked] = useState(state === "selected");
 
   const handleClick = () => {
+    console.log('Click');
+    
     if (state !== "disabled") {
       setIsChecked(!isChecked);
     }

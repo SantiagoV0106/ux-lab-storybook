@@ -1,10 +1,10 @@
-import { Select } from "./components/Inputs/Select/Select"
+import { StepSlider } from "./components/Controls/Slider"
 
 function App() {
   return (
     <>
       <h1>Hello UXLab / Storybook</h1>
-      <Select />
+      <StepSlider />
     </>
 
   )
