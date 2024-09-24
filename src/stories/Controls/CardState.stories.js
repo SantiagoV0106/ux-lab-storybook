@@ -13,54 +13,35 @@ export default {
       description: "Text to display",
     },
     iconName: {
-      control: {
-        type: "select",
-        options: [
-          "add",
-          "arrowRight",
-          "helpQuestion",
-          "shop",
-          "checkIcon",
-          "arrowSimpleRight",
-        ],
-      },
-      description: "Icon to display on the card",
+      control: false, // Deshabilitamos el control para iconName
+      description: "Icon to display on the card (fixed to checkIcon)",
+    },
+    showIcon: {
+      control: "boolean", // Agregamos control para showIcon
+      description: "Toggle to show or hide the icon",
     },
     state: {
       control: {
         type: "select",
-        options: [
-          "completed",
-          "inProgress",
-          "notCompleted",
-        ],
+        options: ["completed", "inProgress", "notCompleted"],
       },
       description: "State of the card that controls background color of the icon",
     },
   },
 };
 
-export const Completed = {
+export const Default = {
   args: {
-    text: "Task Completed",
+    text: "Task Description",
     iconName: "checkIcon",
-    state: "completed",
+    showIcon: true,
   },
 };
 
-export const InProgress = {
+export const WithoutIcon = {
   args: {
-    text: "Task In Progress",
-    iconName: "checkIcon",
-    state: "inProgress",
+    text: "Task Description",
+    iconName: "checkIcon", 
+    showIcon: false, 
   },
 };
-
-export const NotCompleted = {
-  args: {
-    text: "Task Not Completed",
-    iconName: "checkIcon",
-    state: "notCompleted",
-  },
-};
-
