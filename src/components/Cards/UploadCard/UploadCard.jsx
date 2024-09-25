@@ -21,7 +21,7 @@ const ArrowIcon = () => {
 export const UploadFileCard = ({ fileUpload }) => {
     return (
         <article className="flex">
-            <section className={` bg-background-secondary rounded-lg flex justify-between items-center gap-2 py-2 px-4 min-w-[340px]`} >
+            <section className={` bg-background-secondary rounded-lg flex justify-between items-center gap-2 py-2 px-4 w-full min-w-[340px]`} >
                 {
                     !fileUpload ?
                         <>

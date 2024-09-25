@@ -6,7 +6,7 @@ import { UploadFileCard } from '../Cards/UploadCard/UploadCard';
 
 export const Report = ({step}) => {
     return (
-        <div className='flex flex-col gap-3 bg-background-secondary w-80 h-fit items-center relative py-6 px-6 rounded-lg'>
+        <div className='flex flex-col gap-3 bg-background-secondary min-w-80 h-fit items-center relative py-6 px-6 rounded-lg'>
                 
             <CloseBtn style='absolute right-4 top-4'/>
 
