@@ -5,7 +5,7 @@
     }
 
     .icon-container {
-    @apply w-5 h-5 rounded-full flex items-center justify-center bg-system-successColor mr-custom-sm;
+    @apply min-w-4 h-4 rounded-full flex items-center justify-center mr-custom-sm;
     }
 
     .icon-container svg {
