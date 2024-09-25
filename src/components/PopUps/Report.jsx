@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { CloseBtn } from './CloseBtn';
 import { Button } from '../Buttons/Button';
 import { Select } from '../Inputs/Select/Select';
+import { UploadFileCard } from '../Cards/UploadCard/UploadCard';
 
 export const Report = ({step}) => {
     return (
@@ -24,15 +25,20 @@ export const Report = ({step}) => {
                 {
                     step === '2' 
                     ? (
-                    <div className='flex flex-col gap-3 '>
+                    <div className='flex flex-col gap-3 w-full'>
                         <Select
                             label='Correos electrónicos' 
                             defaultOption='Seleccione los correos' 
                             type='email'
                             required={false}/>
 
-                        <p>Card input 1</p>
-                        <p>Card input 1</p>
+                        <UploadFileCard
+                            fileUpload={false}
+                        />
+
+                        <UploadFileCard
+                            fileUpload={false}
+                        />
                     </div>
                     ) : null
                 }
