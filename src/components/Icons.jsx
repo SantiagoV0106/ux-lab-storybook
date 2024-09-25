@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { IconComponents } from '../utils/icons';
+import { IconComponents } from '../utils/Icons';
 
 export const Icon = ({ name, fill }) => {
     const SelectedIcon = IconComponents[name];
@@ -7,7 +7,7 @@ export const Icon = ({ name, fill }) => {
   };
   
   Icon.propTypes = {
-    name: PropTypes.oneOf(['inicio', 'agenda', 'gestion', 'portafolio', 'perfil']).isRequired,
+    name: PropTypes.oneOf(['inicio', 'agenda', 'gestion', 'portafolio', 'perfil', 'arrowRight, add, alert']).isRequired,
     fill: PropTypes.string.isRequired,
   };
   
