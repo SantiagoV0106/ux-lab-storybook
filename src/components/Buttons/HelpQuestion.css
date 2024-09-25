@@ -1,0 +1,20 @@
+.comp-container {
+    @apply relative inline-block;
+}
+
+.tooltip-container {
+    @apply absolute bottom-full h-9 -right-1/4 transform -translate-x-1/2 mb-2 px-3 py-1 bg-neutral-50 text-neutral-1000 text-sm font-medium font-sans rounded-lg z-10 flex items-center;
+    width: 11rem;
+    bottom: calc(100% + 0.5rem); 
+}
+
+.tooltip-container::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Posiciona el triángulo justo debajo del tooltip */
+    left: 78%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #FAFAFA transparent transparent transparent; /* Color del triángulo, debe coincidir con el fondo del tooltip */
+}

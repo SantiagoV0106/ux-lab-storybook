@@ -1,0 +1,107 @@
+.button {
+  @apply min-w-44 h-12 flex items-center justify-center px-custom-md py-custom-xs rounded-lg border-none cursor-pointer text-lg font-medium font-sans;
+  width: auto;
+  white-space: nowrap;
+} 
+
+.icon-left{
+  @apply mr-custom-sm
+}
+
+.icon-right{
+  @apply ml-custom-sm
+}
+
+.icon-left,
+.icon-right {
+  @apply inline-flex items-center; 
+}
+
+.icon-left img,
+.icon-right img {
+  @apply inline-block;
+  width: 24px; 
+  height: 24px;
+}
+
+.button.primary {
+  @apply bg-primary-darkBlue-300 text-neutral-50 
+}
+
+.button.primary.hovered{
+  @apply bg-extended-purple-400
+}
+
+.button.primary.disabled{
+  @apply bg-primary-darkBlue-200 cursor-not-allowed text-primary-darkBlue-50
+}
+
+.button.primary.clicked{
+  @apply bg-extended-purple-300
+}
+
+.button.primary.focused.filled{
+  box-shadow: inset 0 0 0 1px #42C0F0;
+}
+
+.button.secondary {
+  @apply bg-neutral-400 text-neutral-50;
+}
+
+.button.secondary.hovered {
+  @apply bg-neutral-500;
+}
+
+.button.secondary.disabled {
+  @apply bg-neutral-300 cursor-not-allowed text-neutral-200;
+}
+
+.button.secondary.clicked {
+  @apply bg-neutral-700;
+}
+
+.button.secondary.focused.filled {
+  box-shadow: inset 0 0 0 1px #42C0F0; 
+}
+/* Outline styles */
+
+.button.primary.outline {
+  @apply bg-transparent text-primary-darkBlue-300;
+  outline: 1px solid #0041A3;
+}
+
+.button.primary.outline.hovered {
+  @apply bg-transparent text-primary-darkBlue-400;
+  outline: 1px solid #003B93;
+}
+
+.button.primary.outline.disabled {
+  @apply bg-transparent text-primary-blue-200;
+  outline: 1px solid #B1CEE2;
+}
+
+.button.primary.outline.clicked {
+  @apply bg-transparent text-extended-purple-300;
+  outline: 1px solid #283583;
+}
+
+/* Outline Secondary styles */
+.button.secondary.outline{
+  @apply bg-transparent text-neutral-400;
+  outline: 1px solid #BFBFBF;
+}
+
+.button.secondary.outline.hovered{
+  @apply bg-transparent text-neutral-500;
+  outline: 1px solid #B8B8B8;
+}
+
+.button.secondary.outline.disabled{
+  @apply bg-transparent text-neutral-300;
+  outline: 1px solid #CCCCCC;
+}
+
+.button.secondary.outline.clicked{
+  @apply bg-transparent text-neutral-700;
+  outline: 1px solid #737373;
+}

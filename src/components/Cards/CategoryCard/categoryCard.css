@@ -1,0 +1,14 @@
+#category-card-label {
+    position: relative;
+}
+
+#category-card-label::before {
+    content: '';
+    background-color: #737373;
+    position: absolute;
+    height: 60%;
+    width: 1px;
+    top: 50%;
+    left: -2px;
+    transform: translateY(-50%);
+}

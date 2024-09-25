@@ -1,0 +1,20 @@
+    /* TODO: Preguntar si el tamaño de esto sera asi siempre  */
+    .card-container {
+    @apply flex flex-row items-center max-w-[324px] h-[32px] px-custom-lg py-custom-md bg-neutral-50 m-0 rounded-lg text-xs font-normal font-sans text-neutral-700;
+    box-shadow: 0px 9px 19px -7px rgba(105, 105, 105, 0.15);
+    }
+
+    .icon-container {
+    @apply min-w-4 h-4 rounded-full flex items-center justify-center mr-custom-sm;
+    }
+
+    .icon-container svg {
+    @apply w-3 h-3 text-neutral-50;
+    }
+    .inner-text{
+        @apply min-w-64 p-custom-xs m-0 ml-custom-sm
+    }
+
+    .arrow-container {
+        @apply ml-auto text-primary-darkBlue-300;
+    }
