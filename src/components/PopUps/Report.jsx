@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { CloseBtn } from './CloseBtn';
 import { Button } from '../Buttons/Button';
+import { Select } from '../Inputs/Select/Select';
 
 export const Report = ({step}) => {
     return (
@@ -24,7 +25,11 @@ export const Report = ({step}) => {
                     step === '2' 
                     ? (
                     <div className='flex flex-col gap-3 '>
-                        <p>Input 1</p>
+                        <Select
+                            label='Correos electrónicos' 
+                            defaultOption='Seleccione los correos' 
+                            type='email'
+                            required={false}/>
 
                         <p>Card input 1</p>
                         <p>Card input 1</p>

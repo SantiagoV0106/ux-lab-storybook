@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-
 export const RadioButton = ({ state, onClick }) => {
   const getStyles = (state) => {
     switch (state) {

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { CloseBtn } from './CloseBtn';
 import { Button } from '../Buttons/Button';
 import { ToggleSwitch } from '../Controls/ToggleSwitch';
+import { Select } from '../Inputs/Select/Select';
 
 export const FilterOptions = ({type}) => {
   return (
@@ -37,8 +38,16 @@ export const FilterOptions = ({type}) => {
             ) : type === 'inputs'
             ? (
               <div className='flex flex-col gap-3 w-full'>
-                <p>Input 1</p>
-                <p>Input 1</p>
+                <Select
+                  label='Tipo de pedido' 
+                  defaultOption='Seleccione el tipo de pedido' 
+                  type='text'
+                  required={true}/>
+                <Select
+                  label='Tipo de pedido' 
+                  defaultOption='Seleccione el tipo de pedido' 
+                  type='text'
+                  required={true}/>
               </div>
             ): null
           }
