@@ -12,7 +12,7 @@ export const CardState = ({ text, iconName, showIcon = true, state}) => {
 
   return (
     <div className="card-container">
-      <div className={`icon-container ${state === 'completed' ? 'bg-system-successColor' : state === 'inProgress' ? 'bg-system-wariningColor' : 'bg-system-errorColor' } `}>
+      <div className={`icon-container ${state === 'completed' ? 'bg-system-successColor' : state === 'inProgress' ? 'bg-system-warningColor' : 'bg-system-errorColor' } `}>
       {showIcon && <Icon name={iconName} fill="currentColor" />}
       </div>
       <p className="inner-text">{text}</p>

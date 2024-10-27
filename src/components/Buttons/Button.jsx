@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./Button.css";
+import "./button.css";
 import Icon from "./Icon";
 
 const getStyles = (type, appearance, state, iconPosition) =>
