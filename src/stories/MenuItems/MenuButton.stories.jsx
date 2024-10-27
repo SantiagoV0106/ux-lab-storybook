@@ -7,6 +7,11 @@ export default {
     layout: "centered",
 },
   tags: ["autodocs"],
+  argTypes: {
+    selected: {
+      type: 'boolean',
+    },
+  },
 };
 
 const Template = (args) => <MenuButton {...args} />;
