@@ -15,7 +15,7 @@ export const Button = ({
   onClick
 }) => {
   return (
-    <button className={getStyles(type, appearance, state, iconPosition)} onClick={onClick}>
+    <button data-testid="button" className={getStyles(type, appearance, state, iconPosition)} onClick={onClick}>
       {iconSrc && iconPosition === "left" && (
         <span className="icon-left">
           <Icon name={iconSrc} fill="currentColor" />

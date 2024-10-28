@@ -1,6 +1,6 @@
 {
   "onlyChanged": true,
-  "buildScriptName": "deploy-storybook",
+  "buildScriptName": "build-storybook",
   "projectId": "Project:671ebc0274ffbe9fe95af488",
   "zip": true
 }

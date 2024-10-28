@@ -24,7 +24,7 @@ export const IssueCard = ({ state, options }) => {
                                 <span>
                                     Observaciones
                                 </span>
-                                <textarea  className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
+                                <textarea data-testid="text" className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
                             </label>
                             <ImageCard />
                             <div className='flex flex-col gap-1 mt-5'>
