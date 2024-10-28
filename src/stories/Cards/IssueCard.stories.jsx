@@ -1,6 +1,6 @@
 import { IssueCard } from "../../components/Cards/IssueCard/IssueCard"
  
-import { userEvent, within, expect } from '@storybook/test';
+import { userEvent, within } from '@storybook/test';
 
 export default {
     title: "components/Cards/Issue Card",
