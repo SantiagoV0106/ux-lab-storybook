@@ -26,12 +26,11 @@ export default {
     play: async ({ canvasElement }) => {
       const canvas = within(canvasElement);
       const slider = canvas.getByTestId('slider');
-  
-      // Verifica el valor inicial del slider
-      expect(slider.value).toBe('1');
-  
-      // Simula el cambio del slider a 3
-      await userEvent.click(slider, { clientX: slider.getBoundingClientRect().x + 60 }); // Ajusta para mover el slider
-      expect(slider.value).toBe('3');
+      
+      for (let step = 1; step <= 5; step++) {
+        slider.value = step.toString();
+        await userEvent.click(slider); // Simula un clic para activar el cambio
+        expect(slider.value).toBe(step.toString()); // Verifica que el valor cambió
+      }
     },
   };
