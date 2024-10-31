@@ -20,7 +20,7 @@ const ArrowRightIcon = () => {
     )
 }
 
-export const ReportIssueCard = ({disable}) => {
+export const ReportIssueCard = ({disable, state}) => {
     return (
         <article className="flex">
             <section className={`bg-background-secondary rounded-lg  py-4 px-6 min-w-[395px]`}>
@@ -33,7 +33,7 @@ export const ReportIssueCard = ({disable}) => {
                         </div>
                     </div>
                     <div className={`flex justify-end items-center flex-1 gap-2`}>
-                        <Checkbox state="enabled" />
+                        <Checkbox state={state} />
                         <i><ArrowRightIcon /></i>
                     </div>
                 </div>
@@ -47,5 +47,6 @@ PlayIcon.propTypes = {
 }
 
 ReportIssueCard.propTypes = {
-    disable : PropTypes.bool
+    disable: PropTypes.bool,
+    state: PropTypes.string
 }

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./ToggleSwitch.css";
 
-export const ToggleSwitch = ({ isOn, onToggle, name }) => {
+export const ToggleSwitch = ({ isOn, onToggle, name, dataTestId }) => {
   return (
     <div className="toggle-switch">
       <input
@@ -10,6 +10,7 @@ export const ToggleSwitch = ({ isOn, onToggle, name }) => {
         id={name}
         checked={isOn}
         onChange={onToggle}
+        data-testid={dataTestId}
       />
       <label className="toggle-switch-label" htmlFor={name}>
         <span className="toggle-switch-inner" />
@@ -23,4 +24,5 @@ ToggleSwitch.propTypes = {
   isOn: PropTypes.bool.isRequired,
   onToggle: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
+  dataTestId: PropTypes.string
 };

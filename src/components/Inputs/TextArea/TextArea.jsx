@@ -14,7 +14,7 @@ export const TextArea = ({ label, placeholder, required = false }) => {
                         : label
                 }
             </span>
-            <textarea required={required} placeholder={placeholder} className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
+            <textarea data-testid="text-area" required={required} placeholder={placeholder} className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
         </label>
     )
 }

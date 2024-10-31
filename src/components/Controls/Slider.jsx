@@ -24,6 +24,7 @@ export const StepSlider = ({title}) => {
                     style={{
                         background: `linear-gradient(to right, #0041A3 ${(sliderValue - 1) * 25}%, #B8B8B8 ${(sliderValue - 1) * 25}%)`
                     }}
+                    data-testid='slider'
                 />
                 {/* Puntos que indican los pasos */}
                 <div className="flex justify-between mt-2">

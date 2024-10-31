@@ -3,8 +3,21 @@ import { CloseBtn } from './CloseBtn';
 import { Button } from '../Buttons/Button';
 import { ToggleSwitch } from '../Controls/ToggleSwitch';
 import { Select } from '../Inputs/Select/Select';
+import { useState } from 'react';
 
 export const FilterOptions = ({type}) => {
+
+  const [isToggled1, setIsToggled1] = useState(false);
+  const [isToggled2, setIsToggled2] = useState(false);
+
+  // Manejadores de toggle para cada interruptor
+  const handleToggle1 = () => {
+    setIsToggled1((prev) => !prev);
+  };
+
+  const handleToggle2 = () => {
+    setIsToggled2((prev) => !prev);
+  };
   return (
     <div className='flex flex-col gap-3 bg-background-secondary w-80 h-fit items-center relative py-6 px-4 rounded-lg'>
             
@@ -27,13 +40,13 @@ export const FilterOptions = ({type}) => {
               <div className='flex flex-col gap-3 w-full'>
                 <div className='flex flex-row w-full justify-between'>
                   <p className='font-bold text-sm text-text-text'>PDV ejecutados</p>
-                  <ToggleSwitch isOn={false} />
-                </div>
+                  <ToggleSwitch isOn={isToggled1} dataTestId={'toggle1'} onToggle={handleToggle1} />
+                  </div>
 
                 <div className='flex flex-row w-full justify-between'>
                   <p className='font-bold text-sm text-text-text'>PDV no ejecutadas</p>
-                  <ToggleSwitch isOn={false} />
-                </div>
+                  <ToggleSwitch isOn={isToggled2} dataTestId={'toggle2'} onToggle={handleToggle2} />
+                  </div>
               </div>
             ) : type === 'inputs'
             ? (

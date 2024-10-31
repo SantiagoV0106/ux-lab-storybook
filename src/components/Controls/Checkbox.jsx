@@ -2,16 +2,14 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import "./Checkbox.css";
 
-/* 
-TODO Preguntar sobre como agregar los otros 2 iconos (less, more)
-*/
-
-export const Checkbox = ({ state }) => {
-  const [isChecked, setIsChecked] = useState(state === "selected");
+export const Checkbox = ({ initialState }) => {
+  const [isChecked, setIsChecked] = useState(initialState === "selected");
+  const [state, setState] = useState(initialState); // Estado interno para manejar el estado visual
 
   const handleClick = () => {
     if (state !== "disabled") {
       setIsChecked(!isChecked);
+      setState(isChecked ? "enabled" : "selected"); // Cambia entre "enabled" y "selected"
     }
   };
 
@@ -19,6 +17,7 @@ export const Checkbox = ({ state }) => {
     <div
       className={`checkbox-container ${state} ${isChecked ? "checked" : ""}`}
       onClick={handleClick}
+      data-testid="checkbox"
     >
       <div className={`checkbox ${state} ${isChecked ? "checked" : ""}`}>
         {isChecked && state === "selected" && (
@@ -43,6 +42,5 @@ export const Checkbox = ({ state }) => {
 };
 
 Checkbox.propTypes = {
-  state: PropTypes.oneOf(["enabled", "hovered", "selected", "disabled"])
-    .isRequired,
+  initialState: PropTypes.oneOf(["enabled", "hovered", "selected", "disabled"]).isRequired,
 };

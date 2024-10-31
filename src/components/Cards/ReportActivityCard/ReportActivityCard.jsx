@@ -41,7 +41,7 @@ export const ReportActivityCard = ({options}) => {
                                 <span>
                                     Observaciones
                                 </span>
-                                <textarea  className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
+                                <textarea data-testid="text-area" className="outline-none rounded-md bg-white border-2 border-[#B0C4E2] p-[8px] placeholder:text-[#B0C4E2] font-normal min-h-[120px] focus:border-[#0041A3] focus:placeholder:text-[#0041A3] resize-none" />
                             </label>
                     <div className='flex flex-col justify-center mt-8'>
                         <Button type='primary' appearance='filled' state='enabled'> Reportar Novedad </Button>

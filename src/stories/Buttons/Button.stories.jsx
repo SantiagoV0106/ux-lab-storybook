@@ -1,5 +1,6 @@
 import { action } from "@storybook/addon-actions";
 import { Button } from "../../components/Buttons/Button";
+import { userEvent, within, expect } from '@storybook/test';
 
 export default {
   title: "components/Buttons/Button",
@@ -57,5 +58,29 @@ export const Secondary = {
     iconSrc: "add",
     iconPosition: "left", 
     children: "Button Text",
+  },
+};
+
+
+// Definición del botón de prueba
+export const TestingButton = {
+  args: {
+    type: "primary",
+    appearance: "filled",
+    state: "enabled",
+    iconSrc: "add",
+    iconPosition: "left",
+    children: "Button Text",
+    onClick: action("button-click"), // Asigna la acción aquí
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    // const handler = action("button-click"); // Crea un spy para la acción
+
+    // Simula el clic en el botón
+    await userEvent.click(canvas.getByRole('button'));
+
+    // // Verifica que la acción "button-click" fue llamada
+    // expect(handler).toHaveBeenCalled(); // Verifica el spy
   },
 };

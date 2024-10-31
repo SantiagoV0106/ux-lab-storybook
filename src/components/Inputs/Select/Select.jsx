@@ -34,7 +34,7 @@ export const Select = ({ label, required, defaultOption, options, name }) => {
                 <ul className={`rounded-md overflow-hidden bg-white border-2 ${isOpen ? 'border-[#0041A3]' : 'border-[#B0C4E2]'} cursor-pointer font-normal divide-y-2`}>
                     <li className="transition-colors p-[8px] cursor-pointer hover:bg-slate-200" onClick={() => selectOption(defaultOption)}>{defaultOption}</li>
                     {
-                        options.map(option => <li  key={option} className="transition-colors p-[8px] cursor-pointer hover:bg-slate-200" onClick={() => selectOption(option)}>{option}</li>)
+                        options.map(option => <li value={option}  key={option} className="transition-colors p-[8px] cursor-pointer hover:bg-slate-200" onClick={() => selectOption(option)}>{option}</li>)
                     }
                 </ul>
             }

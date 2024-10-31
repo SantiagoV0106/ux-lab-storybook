@@ -15,7 +15,7 @@ export const Button = ({
   onClick
 }) => {
   return (
-    <button data-testid="button" className={getStyles(type, appearance, state, iconPosition)} onClick={onClick}>
+    <button data-testid='button' className={getStyles(type, appearance, state, iconPosition)} onClick={onClick}>
       {iconSrc && iconPosition === "left" && (
         <span className="icon-left">
           <Icon name={iconSrc} fill="currentColor" />
@@ -44,5 +44,5 @@ Button.propTypes = {
   ]),
   iconSrc:PropTypes.oneOf(["add", "arrowRight", "shop"]), /* Here we´re gonna add all the avaible icons for the button */
   iconPosition: PropTypes.oneOf(["left", "right"]),
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };
